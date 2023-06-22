@@ -28,6 +28,7 @@ const cards = [
 const memoryGame = new MemoryGame(cards);
 let pairsClicked = 0;
 let pairsGuessed = 0;
+memoryGame.shuffleCards
 
 window.addEventListener('load', (event) => {
   let html = '';
@@ -84,6 +85,7 @@ window.addEventListener('load', (event) => {
 
 if (memoryGame.checkIfFinished()) {
   alert("You won!")
+  
 }
       // TODO: write some code here
       console.log(`Card clicked: ${card}`);
