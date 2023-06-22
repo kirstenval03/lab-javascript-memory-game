@@ -28,7 +28,7 @@ const cards = [
 const memoryGame = new MemoryGame(cards);
 let pairsClicked = 0;
 let pairsGuessed = 0;
-memoryGame.shuffleCards
+memoryGame.shuffleCards()
 
 window.addEventListener('load', (event) => {
   let html = '';
